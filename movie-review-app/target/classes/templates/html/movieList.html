@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<title>Movie Details</title>
+<script src="..\js\app.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<h4 class="page-header">Movies</h4>
+					<div class="table-responsive">
+						<table class="table table-striped" ng-controller="listCtrl">
+							<thead>
+								<tr>
+<!-- 									<th><a href="#" -->
+<!-- 										ng-click="orderByField='referenceId'; reverseSort = !reverseSort"> -->
+<!-- 											Refernece #<span ng-show="orderByField == 'referenceId'"><span -->
+<!-- 												ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span> -->
+<!-- 									</a></th> -->
+									<th><a href="#"
+										ng-click="orderByField='movieId'; reverseSort = !reverseSort">
+											 Id<span ng-show="orderByField == 'id'"><span
+												ng-show="!reverseSort">^</span><span ng-show="reverseSort"></span></span>
+									</a></th>
+									<th><a href="#"
+										ng-click="orderByField='cardnumber'; reverseSort = !reverseSort">
+											 Name<span ng-show="orderByField == 'movieName'"><span
+												ng-show="!reverseSort">^</span><span ng-show="reverseSort"></span></span>
+									</a></th>
+									<th><a href="#"
+										ng-click="orderByField='name_on_card'; reverseSort = !reverseSort">
+											 Description<span ng-show="orderByField == 'movieDesc'"><span
+												ng-show="!reverseSort">^</span><span ng-show="reverseSort"></span></span>
+									</a></th>
+									
+									<th><a href="#">
+											Action
+									</a></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr
+									ng-repeat="x in dbrecords | filter:test |orderBy:orderByField:reverseSort">
+<!-- 									<td>{{x.referenceId}}</td> -->
+									<td>{{x.id}}</td>
+									<td>{{x.movieName}}</td>
+									<td>{{x.movieDesc}}</td>
+									<td>{{x.reviewDesc}}</td>
+									<td>
+										<span ng-class="{
+										        'color-red': x.status === 'Failed', 
+										        'color-green': x.status === 'Success'}">{{x.status}}</span>
+									</td>
+									<td>
+										<span>
+											<button class="btn btn-primary btn-xs btn-success">
+											Add Review
+										</button>
+										</span>
+									
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				</main>
+			</div>
+		</div>
+</div>
+</body>
+</html>

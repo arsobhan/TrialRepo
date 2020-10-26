@@ -1,0 +1,4 @@
+com\sample\moviereviewapp\config\WebConfig.class
+com\sample\moviereviewapp\controller\WebController.class
+com\sample\moviereviewapp\model\MovieItem.class
+com\sample\moviereviewapp\MovieReviewAppApplication.class
