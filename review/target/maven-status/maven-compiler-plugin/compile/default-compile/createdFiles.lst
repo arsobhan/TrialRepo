@@ -1,0 +1,7 @@
+com\sample\review\service\ReviewService.class
+com\sample\review\ReviewApplication.class
+com\sample\review\controller\ReviewController.class
+com\sample\review\repository\ReviewRepository.class
+com\sample\review\service\ReviewServiceImpl.class
+com\sample\review\entity\Review.class
+com\sample\review\model\ReviewItem.class
