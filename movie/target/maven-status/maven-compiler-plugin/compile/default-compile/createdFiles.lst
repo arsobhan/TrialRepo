@@ -1,0 +1,7 @@
+com\sample\movie\model\MovieObj.class
+com\sample\movie\repository\MovieRepository.class
+com\sample\movie\service\MovieService.class
+com\sample\movie\controller\MovieController.class
+com\sample\movie\entity\Movie.class
+com\sample\movie\MovieApplication.class
+com\sample\movie\service\MovieServiceImpl.class
