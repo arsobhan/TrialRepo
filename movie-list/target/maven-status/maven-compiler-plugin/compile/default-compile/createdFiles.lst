@@ -1,0 +1,5 @@
+com\sample\movielist\controller\MovieListController.class
+com\sample\movielist\MovieListApplication.class
+com\sample\movielist\model\Movies.class
+com\sample\movielist\model\MovieItem.class
+com\sample\movielist\model\MovieObj.class
